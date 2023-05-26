@@ -1,195 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Ethnus Layout</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <style>
+      .left-part {
+        background-color: #f8f9fa;
+        height: 100vh;
+      }
+
+      .right-part {
+        background-color: #e9ecef;
+        height: 100vh;
+      }
+
+      .first-tab {
+        height: 1vh;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card mt-5">
-            <div class="card-body">
-              <h3 class="card-title text-center">Form</h3>
-              <form class="needs-validation" novalidate>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="First Name"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter your first name.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Last Name"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter your last name.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-envelope"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Email"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter a valid email address.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-phone"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Phone"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter your phone number.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-address-card"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Address"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter your address.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-city"></i>
-                      </span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="City"
-                      required
-                    />
-                    <div class="invalid-feedback">Please enter your city.</div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-map-marker-alt"></i>
-                      </span>
-                    </div>
-                    <select class="form-control" required>
-                      <option>Select State</option>
-                      <option>Maharashtra</option>
-                      <option>Rajasthan</option>
-                      <option>Tamil Nadu</option>
-                    </select>
-                    <div class="invalid-feedback">Please select a state.</div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-file-alt"></i>
-                      </span>
-                    </div>
-                    <textarea
-                      class="form-control"
-                      placeholder="Project Description"
-                      required
-                    ></textarea>
-                    <div class="invalid-feedback">
-                      Please enter a project description.
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
+    <header class="jumbotron text-center first-tab">
+      <h1>Ethnus Layout</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">HOME</a>
+        <a class="navbar-brand" href="#">MENU</a>
+        <a class="navbar-brand" href="#">ABOUT</a>
+        <a class="navbar-brand" href="#">CONTACT</a>
+        <div class="navbar-expand" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">SIGN UP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOGIN</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-9 left-part">
+          <div class="first-tab">
+            <h2>Your Content Here</h2>
+            <p>This is content here</p>
+          </div>
+        </div>
+        <div class="col-3 right-part"></div>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <script>
-      (function () {
-        "use strict";
-        window.addEventListener(
-          "load",
-          function () {
-            var forms = document.getElementsByClassName("needs-validation");
-            var validation = Array.prototype.filter.call(
-              forms,
-              function (form) {
-                form.addEventListener(
-                  "submit",
-                  function (event) {
-                    if (form.checkValidity() === false) {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }
-                    form.classList.add("was-validated");
-                  },
-                  false
-                );
-              }
-            );
-          },
-          false
-        );
-      })();
-    </script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
